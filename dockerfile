@@ -1,7 +1,7 @@
 FROM ubuntu:latest AS checkout
 RUN apt update
 RUN apt install git -y
-RUN git clone https://github.com/AbhishekPatil30/spring-boot-war-example.git
+RUN git clone https://github.com/Sairamesh1/spring-boot-war-example.git
 WORKDIR /spring-boot-war-example
 
 FROM maven:3.8.6-amazoncorretto-11 AS build
