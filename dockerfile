@@ -11,5 +11,5 @@ RUN mvn clean install
 
 FROM artisantek/tomcat:1 AS deploy
 COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/
-EXPOSE 9050
+EXPOSE 9090
 CMD ["catalina.sh", "run"]
